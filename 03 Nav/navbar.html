@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar Exercise</title>
+    <!-- Used '&nbsp' html entity to create space between elements to make the navbar look better visually -->
+  </head>
+  <body>
+    <header>
+      <label for="toggle">
+        <input type="checkbox" class="toggle" id="toggle" />
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu">MENU</span>
+        <h2 class="logo-responsive">Navbar</h2>
+        <nav>
+          <div class="left-side-nav">
+            <h2 style="color: white" class="logo">Navbar</h2>
+            <ul class="links">
+              <!-- <li><figure href="#" class="logo">Navbar</figure></li> -->
+              <li class="list">
+                <a href="#">Home</a>
+              </li>
+              <li><a href="#" class="anchor-2">Links</a></li>
+              <li>
+                <select>
+                  <option value="Dropdown" label="Dropdown"></option>
+                  <option value="Dropdown">1</option>
+                  <option value="Dropdown">2</option>
+                  <option value="Dropdown">3</option>
+                </select>
+              </li>
+              <li><a href="#" class="disabled-link">Disabled</a></li>
+            </ul>
+          </div>
+
+          <ul class="search-box">
+            <li>
+              <input
+                type="text"
+                class="search-box-input"
+                placeholder="Search"
+                id=""
+              />
+              <button type="submit">Search</button>
+            </li>
+          </ul>
+        </nav>
+      </label>
+    </header>
+  </body>
+</html>

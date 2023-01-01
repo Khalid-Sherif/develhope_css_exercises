@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(40, 42, 51);
+  padding: 10px;
+  font-family: "Kanit", sans-serif;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo-responsive {
+  color: white;
+}
+
+.left-side-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* nav ul.links {
+  justify-content: space-between;
+} */
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+li,
+a,
+button {
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search-box-input {
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  padding: 0.3rem 0 0.2rem 0.2rem;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  outline-color: rgb(81, 138, 81);
+  border-radius: 0.3rem;
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgb(81, 138, 81);
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+  color: rgb(81, 138, 81);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: rgba(81, 138, 81, 1);
+  color: white;
+}
+
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  color: rgb(114, 114, 114);
+  font-weight: bold;
+}
+
+a,
+select,
+.search-box {
+  margin: 0 5px 0 5px;
+}
+
+select {
+  outline: none;
+  border-style: none;
+  background-color: rgb(40, 42, 51);
+  color: rgb(196, 196, 196);
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a.anchor-2 {
+  color: rgb(196, 196, 196);
+}
+
+.menu,
+.toggle {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  float: right;
+}
+
+.logo-responsive {
+  display: none;
+}
+
+.menu {
+  color: whitesmoke;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  float: right;
+}
+
+.hamburger {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger span {
+    height: 3px;
+    width: 30px;
+    background: whitesmoke;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .toggle:checked ~ .hamburger span:first-child {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  .toggle:checked ~ .hamburger span:last-child {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+
+  .toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo-responsive {
+    display: inline-block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    background: rgb(40, 42, 51);
+    width: 100vw;
+    padding: 40px 70px 50px;
+    margin-top: 30px;
+    position: fixed;
+    right: -100vw;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .toggle:checked ~ nav {
+    right: 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
