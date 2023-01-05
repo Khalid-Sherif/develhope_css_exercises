@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.card-post {
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.322);
+}
+
+.heart,
+.chat-bubble {
+  margin-left: 10px;
+  width: 5%;
+  cursor: pointer;
+}
+
+.user-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgb(230, 230, 230);
+}
+
+.username {
+  background: #708294;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: center;
+  border: none;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.user-post {
+  background: linear-gradient(to top, #bdc3c7, #708294);
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+}
+
+.user-post ul li {
+  display: inline;
+}
+
+.name-and-location {
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.cat-img {
+  border: none;
+  display: flex;
+}
+
+.name {
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+  cursor: pointer;
+}
+
+.date-and-location {
+  font-size: 14px;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.user-img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
