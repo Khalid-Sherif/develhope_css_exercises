@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.calculator {
+  max-width: 350px;
+  margin: 2rem auto;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.212);
+}
+
+.calculator input {
+  background: rgb(62, 63, 68);
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-size: 40px;
+  text-align: right;
+  outline: none;
+  border-radius: 10px 10px 0 0;
+  color: whitesmoke;
+  caret-color: whitesmoke;
+}
+
+.calculator input::placeholder {
+  color: whitesmoke;
+}
+
+.calc-btn {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+  border: none;
+}
+
+.addition,
+.subtraction,
+.division,
+.multiplication {
+  background: rgb(181, 190, 201);
+}
+
+.calculator-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-columns: auto;
+}
+
+.equal-sign {
+  border-radius: 0 0 10px 0;
+  background: rgb(255, 143, 143);
+  grid-row: span 4;
+  border-left: 3px solid rgb(132, 142, 153);
+}
+
+.zero {
+  border-radius: 0 0 0 10px;
+}
+
+.division,
+.multiplication,
+.subtraction,
+.nine,
+.six,
+.three,
+.ac-btn,
+.point {
+  border-left: 3px solid rgb(132, 142, 153);
+}
+
+.multiplication,
+.subtraction,
+.addition,
+.division,
+.nine,
+.six,
+.three,
+.seven,
+.four,
+.one {
+  border-bottom: 3px solid rgb(132, 142, 153);
+}
+
+.eight,
+.five,
+.two {
+  border-bottom: 3px solid rgb(132, 142, 153);
+  border-left: 3px solid rgb(132, 142, 153);
+}
