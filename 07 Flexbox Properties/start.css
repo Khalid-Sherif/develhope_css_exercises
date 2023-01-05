@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#yellow {
+  order: -2;
+}
+
+#red {
+  order: -1;
+}
+
+#orange {
+  flex-grow: 2;
+}
