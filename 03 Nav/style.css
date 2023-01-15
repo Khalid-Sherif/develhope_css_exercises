@@ -172,6 +172,11 @@ a.anchor-2 {
     display: inline-block;
   }
 
+  ul {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
   .logo {
     display: none;
   }
